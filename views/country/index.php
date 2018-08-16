@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use yii\bootstrap\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\CountrySearch */
@@ -19,9 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Create Country', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-    <div>
-        <?= DatePicker::widget(['name' => 'date']) ?>
-    </div>
+    
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
